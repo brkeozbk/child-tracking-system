@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cocukuidgiris"
+    android:background="@color/backgroundcolor">
+
+
+
+
+    <EditText
+        android:id="@+id/veliemail"
+        android:layout_width="317dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/editshapetext"
+        android:drawableStart="@drawable/emailicon"
+        android:drawablePadding="12dp"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:padding="6dp"
+        android:textColor="@color/textcolor"
+        android:textColorHint="@color/textcolor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/velikullanicisifre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cocukuidedittext" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="243dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vbslogo" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="233dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="68dp"
+        android:text="Uid Girişi"
+        android:paddingStart="10dp"
+        android:textColor="@color/textcolor"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+
+    <EditText
+        android:id="@+id/cocukuidedittext"
+        android:layout_width="317dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/editshapetext"
+        android:drawableStart="@drawable/uidicon"
+        android:drawablePadding="12dp"
+        android:hint="Uid"
+        android:inputType="textPersonName"
+        android:padding="6dp"
+        android:textColor="@color/textcolor"
+        android:textColorHint="@color/textcolor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/veliemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/uidgirisbutton"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="47dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Uid Giriş"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/velikullanicisifre" />
+
+    <EditText
+        android:id="@+id/velikullanicisifre"
+        android:layout_width="317dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/editshapetext"
+        android:drawableStart="@drawable/lock_icon"
+        android:drawablePadding="12dp"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:padding="6dp"
+        android:textColor="@color/textcolor"
+        android:textColorHint="@color/textcolor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/uidgirisbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/veliemail"  />
+</androidx.constraintlayout.widget.ConstraintLayout>

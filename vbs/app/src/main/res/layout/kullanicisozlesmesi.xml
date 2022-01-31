@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/madde1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Uygulamanın doğru çalışabilmesi için gerekli izinler verilmelidir."
+        android:textSize="16dp"
+        android:textColor="@color/textcolor"
+         />
+
+    <TextView
+        android:id="@+id/madde2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/madde1"
+        android:layout_marginTop="10dp"
+        android:text="2. Çocuk konum hizmeti alınabilmesi için öncelikle veli kayıtı açılmalıdır."
+        android:textSize="16dp"
+        android:textColor="@color/textcolor" />
+
+    <TextView
+        android:id="@+id/madde3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Çocuk Takip ve Veli Bilgilendirme Sistemi Android API 31 ve üzeri için geliştirilmiştir. API
+seviyesi bu değer altındaki cihazları desteklememektedir."
+        android:textSize="16dp"
+        android:textColor="@color/textcolor"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/madde2"/>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout class="androidx.appcompat.app.AlertController$RecycleListView" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".slider_presentation"
+    android:background="@color/backgroundcolor">
+
+    <androidx.viewpager.widget.ViewPager
+
+        android:id="@+id/main_activity_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/maintablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_gravity="bottom"
+            android:rotationX="0"
+            android:background="@null"
+            android:translationY="-30dp"
+            android:translationZ="1dp"
+            app:tabBackground="@color/indicator"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/purple_200"
+            app:tabIndicatorHeight="6dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.viewpager.widget.ViewPager>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

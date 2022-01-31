@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vbs">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/vbslogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/vbslogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Vbs">
+        <activity
+            android:name=".sifremiunuttum"
+            android:exported="false" />
+        <activity
+            android:name=".CocukCurrentLocation"
+            android:exported="false" />
+        <activity
+            android:name=".kullaniciayar"
+            android:exported="false" />
+        <activity
+            android:name=".uid_olusturcocuk"
+            android:exported="false" />
+        <activity
+            android:name=".veli_menu"
+            android:exported="false" />
+        <activity
+            android:name=".cocukuidgiris"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserLocation"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDYwPFLtsSRi4-bHawaoVm59znkDt0NhtU" />
+
+        <activity
+            android:name=".CurrentGoogleMap"
+            android:exported="false" />
+        <activity
+            android:name=".getlocation"
+            android:exported="false" />
+        <activity
+            android:name=".slider_presentation"
+            android:exported="false" />
+        <activity
+            android:name=".Main"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity android:name=".Login" />
+
+        <service
+            android:name=".LocationService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

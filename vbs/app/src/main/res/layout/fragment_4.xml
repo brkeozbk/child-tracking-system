@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.fragment_4"
+    android:background="@color/backgroundcolor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundcolor">
+        >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="409dp"
+            android:layout_height="407dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="250dp"
+            android:src="@drawable/talkingonphone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="339dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif"
+            android:text="Çocuğunuzun iletişime geçtiği kişileri görüntüleyin:"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="300dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="105dp"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/textcolor"
+            android:text="-Çocuğunuzun en son kimlerle iletişime geçtiğini görüntüleyin \n -Çocuğuzun tehlike durumunda geçmiş iletişimlerini görüntüleyin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView9" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="162dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="187dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="33dp"
+            android:layout_marginBottom="54dp"
+            android:background="@color/purple_200"
+            android:fontFamily="sans-serif-medium"
+            android:radius="50dp"
+            android:text="Kullanmaya Başla"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
